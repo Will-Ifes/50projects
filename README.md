@@ -2,11 +2,12 @@
 
 Coleção de **39 exercícios presentes no repositório**, com HTML, CSS e JavaScript. O nome identifica a série de estudo; não significa que os 50 exercícios estejam concluídos.
 
-## Objetivo
-
 Praticar DOM, eventos, animações e pequenos componentes em exemplos independentes. A coleção documenta minha formação; projetos atuais de engenharia estão no [Will Labs](https://github.com/Will-Ifes/will-labs).
 
-## Catálogo
+
+
+<details>
+<summary><strong>Explorar os 39 exercícios</strong></summary>
 
 | Exercício | Tema |
 | --- | --- |
@@ -50,7 +51,12 @@ Praticar DOM, eventos, animações e pequenos componentes em exemplos independen
 | [project38](project38) | Mobile Tab Navigation |
 | [project39](project39) | Password Strength Background |
 
-## Executar
+</details>
+
+<details>
+<summary><strong>Executar e consultar</strong></summary>
+
+### Executar
 
 ```bash
 git clone https://github.com/Will-Ifes/50projects.git
@@ -60,9 +66,14 @@ python3 -m http.server 8080
 
 Com Python 3 instalado, abra http://localhost:8080/project1/ e troque o número para acessar outro exercício. Cada pasta tem página e estilos próprios; exemplos interativos também possuem um script.
 
-## Escopo e referências
+</details>
+
+<details>
+<summary>Escopo e referências</summary>
 
 Estudos baseados na série **50 Projects in 50 Days**, de Brad Traversy e Florin Pop. Alguns exemplos dependem de APIs, imagens, áudio ou bibliotecas externas. Não há suíte compartilhada de testes ou contrato de aplicação em produção. Conteúdo de demonstração, incluindo depoimentos, é fictício.
+
+</details>
 
 ---
 
