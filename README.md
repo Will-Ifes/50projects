@@ -1,10 +1,19 @@
+<p align="center">
+  <img src="./.github/readme-cover.svg" alt="Interface Lab: 39 exercícios de comportamento na interface." width="100%" />
+</p>
+
 # 50 Projects · exercícios de interface
 
 Coleção de **39 exercícios presentes no repositório**, com HTML, CSS e JavaScript. O nome identifica a série de estudo; não significa que os 50 exercícios estejam concluídos.
 
 Praticar DOM, eventos, animações e pequenos componentes em exemplos independentes. A coleção documenta minha formação; projetos atuais de engenharia estão no [Will Labs](https://github.com/Will-Ifes/will-labs).
 
+## Explore o diferencial
 
+| Ponto de entrada | O que observar |
+| --- | --- |
+| [Interação direta](project22/script.js) | Arrastar elementos e desenhar são exemplos de eventos e manipulação do DOM. |
+| [Dados de uma API](project37/script.js) | A Pokédex mostra como uma resposta HTTP se transforma em cartões. |
 
 <details>
 <summary><strong>Explorar os 39 exercícios</strong></summary>
