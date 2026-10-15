@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="40 mini projetos de HTML, CSS e JavaScript puros, revisados para acessibilidade. Por Will Oliveira.">
+    <title>50 Projetos · Vitrine de HTML, CSS e JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap">
+    <link rel="stylesheet" href="comum/indice.css">
+    <script src="comum/indice.js" defer></script>
+</head>
+<body>
+    <a class="pular-link" href="#projetos">Pular para os projetos</a>
+
+    <header class="cabecalho">
+        <p class="selo">HTML · CSS · JavaScript puro</p>
+        <h1>50 Projetos <span>em 50 dias</span></h1>
+        <p class="intro">
+            40 mini projetos feitos durante o curso <em>50 Projects in 50 Days</em>,
+            revisados em 2026: nomes organizados, recursos quebrados consertados e
+            acessibilidade conferida com axe-core em todos eles.
+        </p>
+        <ul class="numeros" aria-label="Resumo">
+            <li><strong>40</strong> projetos</li>
+            <li><strong>0</strong> dependências de build</li>
+            <li><strong>0</strong> violações no axe</li>
+        </ul>
+    </header>
+
+    <main id="projetos" tabindex="-1">
+        <h2 class="sr-only">Projetos</h2>
+
+        <div class="controles">
+            <div class="busca">
+                <label for="busca">Buscar projeto</label>
+                <input id="busca" type="search" placeholder="Ex.: carrossel, API, senha" autocomplete="off">
+            </div>
+            <div class="filtros" role="group" aria-label="Filtrar por categoria">
+                <button type="button" class="filtro" aria-pressed="true" data-filtro="">Todos</button>
+                <button type="button" class="filtro" aria-pressed="false" data-filtro="__melhorado">★ Melhorados (5)</button>
+                <button type="button" class="filtro" aria-pressed="false" data-filtro="API">API</button>
+                <button type="button" class="filtro" aria-pressed="false" data-filtro="Animação">Animação</button>
+                <button type="button" class="filtro" aria-pressed="false" data-filtro="Componente">Componente</button>
+                <button type="button" class="filtro" aria-pressed="false" data-filtro="Formulário">Formulário</button>
+                <button type="button" class="filtro" aria-pressed="false" data-filtro="Interação">Interação</button>
+                <button type="button" class="filtro" aria-pressed="false" data-filtro="Layout">Layout</button>
+                <button type="button" class="filtro" aria-pressed="false" data-filtro="Navegação">Navegação</button>
+                <button type="button" class="filtro" aria-pressed="false" data-filtro="Utilitário">Utilitário</button>
+            </div>
+        </div>
+
+        <p class="resultado" role="status" aria-live="polite"></p>
+
+        <ul class="grade">
+            <li class="card" data-categoria="Animação" data-melhorado="false" data-busca="expanding cards painéis de imagem que se expandem ao clicar. animação">
+                <a class="card-link" href="projetos/01-expanding-cards/">
+                    <img src="miniaturas/01-expanding-cards.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">01</span>
+                    <h3>Expanding Cards</h3>
+                </a>
+                <p>Painéis de imagem que se expandem ao clicar.</p>
+                <div class="card-rodape">
+                    <span class="tag">Animação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/01-expanding-cards" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Expanding Cards no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Componente" data-melhorado="false" data-busca="progress steps indicador de etapas com botões de avançar e voltar. componente">
+                <a class="card-link" href="projetos/02-progress-steps/">
+                    <img src="miniaturas/02-progress-steps.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">02</span>
+                    <h3>Progress Steps</h3>
+                </a>
+                <p>Indicador de etapas com botões de avançar e voltar.</p>
+                <div class="card-rodape">
+                    <span class="tag">Componente</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/02-progress-steps" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Progress Steps no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Navegação" data-melhorado="false" data-busca="rotating navigation página que gira para revelar o menu. navegação">
+                <a class="card-link" href="projetos/03-rotating-navigation/">
+                    <img src="miniaturas/03-rotating-navigation.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">03</span>
+                    <h3>Rotating Navigation</h3>
+                </a>
+                <p>Página que gira para revelar o menu.</p>
+                <div class="card-rodape">
+                    <span class="tag">Navegação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/03-rotating-navigation" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Rotating Navigation no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Formulário" data-melhorado="false" data-busca="hidden search campo de busca que se abre a partir de um ícone. formulário">
+                <a class="card-link" href="projetos/04-hidden-search/">
+                    <img src="miniaturas/04-hidden-search.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">04</span>
+                    <h3>Hidden Search</h3>
+                </a>
+                <p>Campo de busca que se abre a partir de um ícone.</p>
+                <div class="card-rodape">
+                    <span class="tag">Formulário</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/04-hidden-search" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Hidden Search no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Animação" data-melhorado="false" data-busca="blurry loading imagem que sai do desfoque enquanto um contador carrega. animação">
+                <a class="card-link" href="projetos/05-blurry-loading/">
+                    <img src="miniaturas/05-blurry-loading.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">05</span>
+                    <h3>Blurry Loading</h3>
+                </a>
+                <p>Imagem que sai do desfoque enquanto um contador carrega.</p>
+                <div class="card-rodape">
+                    <span class="tag">Animação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/05-blurry-loading" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Blurry Loading no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Animação" data-melhorado="false" data-busca="scroll animation caixas que entram na tela conforme a rolagem. animação">
+                <a class="card-link" href="projetos/06-scroll-animation/">
+                    <img src="miniaturas/06-scroll-animation.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">06</span>
+                    <h3>Scroll Animation</h3>
+                </a>
+                <p>Caixas que entram na tela conforme a rolagem.</p>
+                <div class="card-rodape">
+                    <span class="tag">Animação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/06-scroll-animation" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Scroll Animation no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Layout" data-melhorado="false" data-busca="split landing page landing page dividida que cresce para o lado do mouse. layout">
+                <a class="card-link" href="projetos/07-split-landing-page/">
+                    <img src="miniaturas/07-split-landing-page.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">07</span>
+                    <h3>Split Landing Page</h3>
+                </a>
+                <p>Landing page dividida que cresce para o lado do mouse.</p>
+                <div class="card-rodape">
+                    <span class="tag">Layout</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/07-split-landing-page" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Split Landing Page no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Formulário" data-melhorado="false" data-busca="form input wave formulário de login com rótulos animados letra a letra. formulário">
+                <a class="card-link" href="projetos/08-form-input-wave/">
+                    <img src="miniaturas/08-form-input-wave.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">08</span>
+                    <h3>Form Input Wave</h3>
+                </a>
+                <p>Formulário de login com rótulos animados letra a letra.</p>
+                <div class="card-rodape">
+                    <span class="tag">Formulário</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/08-form-input-wave" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Form Input Wave no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Interação" data-melhorado="false" data-busca="sound board botões que tocam efeitos sonoros. interação">
+                <a class="card-link" href="projetos/09-sound-board/">
+                    <img src="miniaturas/09-sound-board.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">09</span>
+                    <h3>Sound Board</h3>
+                </a>
+                <p>Botões que tocam efeitos sonoros.</p>
+                <div class="card-rodape">
+                    <span class="tag">Interação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/09-sound-board" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Sound Board no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="API" data-melhorado="false" data-busca="dad jokes gerador de piadas consumindo a api icanhazdadjoke. api">
+                <a class="card-link" href="projetos/10-dad-jokes/">
+                    <img src="miniaturas/10-dad-jokes.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">10</span>
+                    <h3>Dad Jokes</h3>
+                </a>
+                <p>Gerador de piadas consumindo a API icanhazdadjoke.</p>
+                <div class="card-rodape">
+                    <span class="tag">API</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/10-dad-jokes" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Dad Jokes no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Interação" data-melhorado="false" data-busca="event keycodes mostra key, keycode e code de cada tecla pressionada. interação">
+                <a class="card-link" href="projetos/11-event-keycodes/">
+                    <img src="miniaturas/11-event-keycodes.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">11</span>
+                    <h3>Event KeyCodes</h3>
+                </a>
+                <p>Mostra key, keyCode e code de cada tecla pressionada.</p>
+                <div class="card-rodape">
+                    <span class="tag">Interação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/11-event-keycodes" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Event KeyCodes no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Componente" data-melhorado="false" data-busca="faq collapse perguntas frequentes que abrem e fecham. componente">
+                <a class="card-link" href="projetos/12-faq-collapse/">
+                    <img src="miniaturas/12-faq-collapse.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">12</span>
+                    <h3>FAQ Collapse</h3>
+                </a>
+                <p>Perguntas frequentes que abrem e fecham.</p>
+                <div class="card-rodape">
+                    <span class="tag">Componente</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/12-faq-collapse" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de FAQ Collapse no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Utilitário" data-melhorado="false" data-busca="random choice picker sorteia uma opção entre as digitadas. utilitário">
+                <a class="card-link" href="projetos/13-random-choice-picker/">
+                    <img src="miniaturas/13-random-choice-picker.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">13</span>
+                    <h3>Random Choice Picker</h3>
+                </a>
+                <p>Sorteia uma opção entre as digitadas.</p>
+                <div class="card-rodape">
+                    <span class="tag">Utilitário</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/13-random-choice-picker" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Random Choice Picker no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Navegação" data-melhorado="false" data-busca="animated navigation barra de navegação que recolhe com animação. navegação">
+                <a class="card-link" href="projetos/14-animated-navigation/">
+                    <img src="miniaturas/14-animated-navigation.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">14</span>
+                    <h3>Animated Navigation</h3>
+                </a>
+                <p>Barra de navegação que recolhe com animação.</p>
+                <div class="card-rodape">
+                    <span class="tag">Navegação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/14-animated-navigation" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Animated Navigation no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Animação" data-melhorado="false" data-busca="incrementing counter contadores de seguidores que sobem até o valor final. animação">
+                <a class="card-link" href="projetos/15-incrementing-counter/">
+                    <img src="miniaturas/15-incrementing-counter.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">15</span>
+                    <h3>Incrementing Counter</h3>
+                </a>
+                <p>Contadores de seguidores que sobem até o valor final.</p>
+                <div class="card-rodape">
+                    <span class="tag">Animação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/15-incrementing-counter" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Incrementing Counter no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Utilitário" data-melhorado="false" data-busca="drink water controle de copos de água bebidos no dia. utilitário">
+                <a class="card-link" href="projetos/16-drink-water/">
+                    <img src="miniaturas/16-drink-water.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">16</span>
+                    <h3>Drink Water</h3>
+                </a>
+                <p>Controle de copos de água bebidos no dia.</p>
+                <div class="card-rodape">
+                    <span class="tag">Utilitário</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/16-drink-water" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Drink Water no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="API" data-melhorado="true" data-busca="movie app filmes populares e busca em português pela api do tmdb, com sinopse e nota. api melhorado">
+                <a class="card-link" href="projetos/17-movie-app/">
+                    <img src="miniaturas/17-movie-app.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">17</span>
+                    <span class="selo-melhorado">Melhorado</span>
+                    <h3>Movie App</h3>
+                </a>
+                <p>Filmes populares e busca em português pela API do TMDB, com sinopse e nota.</p>
+                <div class="card-rodape">
+                    <span class="tag">API</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/17-movie-app" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Movie App no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Componente" data-melhorado="false" data-busca="background slider carrossel com o fundo acompanhando o slide. componente">
+                <a class="card-link" href="projetos/18-background-slider/">
+                    <img src="miniaturas/18-background-slider.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">18</span>
+                    <h3>Background Slider</h3>
+                </a>
+                <p>Carrossel com o fundo acompanhando o slide.</p>
+                <div class="card-rodape">
+                    <span class="tag">Componente</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/18-background-slider" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Background Slider no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Utilitário" data-melhorado="false" data-busca="theme clock relógio analógico e digital com tema claro e escuro. utilitário">
+                <a class="card-link" href="projetos/19-theme-clock/">
+                    <img src="miniaturas/19-theme-clock.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">19</span>
+                    <h3>Theme Clock</h3>
+                </a>
+                <p>Relógio analógico e digital com tema claro e escuro.</p>
+                <div class="card-rodape">
+                    <span class="tag">Utilitário</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/19-theme-clock" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Theme Clock no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Animação" data-melhorado="false" data-busca="button ripple effect botão com onda a partir do ponto clicado. animação">
+                <a class="card-link" href="projetos/20-button-ripple-effect/">
+                    <img src="miniaturas/20-button-ripple-effect.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">20</span>
+                    <h3>Button Ripple Effect</h3>
+                </a>
+                <p>Botão com onda a partir do ponto clicado.</p>
+                <div class="card-rodape">
+                    <span class="tag">Animação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/20-button-ripple-effect" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Button Ripple Effect no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Interação" data-melhorado="false" data-busca="drag n drop imagem arrastável entre caixas. interação">
+                <a class="card-link" href="projetos/21-drag-n-drop/">
+                    <img src="miniaturas/21-drag-n-drop.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">21</span>
+                    <h3>Drag N Drop</h3>
+                </a>
+                <p>Imagem arrastável entre caixas.</p>
+                <div class="card-rodape">
+                    <span class="tag">Interação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/21-drag-n-drop" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Drag N Drop no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Interação" data-melhorado="true" data-busca="drawing app desenho em canvas que funciona no toque e salva o resultado em png. interação melhorado">
+                <a class="card-link" href="projetos/22-drawing-app/">
+                    <img src="miniaturas/22-drawing-app.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">22</span>
+                    <span class="selo-melhorado">Melhorado</span>
+                    <h3>Drawing App</h3>
+                </a>
+                <p>Desenho em canvas que funciona no toque e salva o resultado em PNG.</p>
+                <div class="card-rodape">
+                    <span class="tag">Interação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/22-drawing-app" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Drawing App no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Animação" data-melhorado="false" data-busca="kinetic loader animação de carregamento feita só com css. animação">
+                <a class="card-link" href="projetos/23-kinetic-loader/">
+                    <img src="miniaturas/23-kinetic-loader.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">23</span>
+                    <h3>Kinetic Loader</h3>
+                </a>
+                <p>Animação de carregamento feita só com CSS.</p>
+                <div class="card-rodape">
+                    <span class="tag">Animação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/23-kinetic-loader" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Kinetic Loader no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Componente" data-melhorado="false" data-busca="content placeholder esqueleto de carregamento antes do conteúdo aparecer. componente">
+                <a class="card-link" href="projetos/24-content-placeholder/">
+                    <img src="miniaturas/24-content-placeholder.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">24</span>
+                    <h3>Content Placeholder</h3>
+                </a>
+                <p>Esqueleto de carregamento antes do conteúdo aparecer.</p>
+                <div class="card-rodape">
+                    <span class="tag">Componente</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/24-content-placeholder" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Content Placeholder no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Navegação" data-melhorado="false" data-busca="sticky navbar menu que muda de estilo ao rolar a página. navegação">
+                <a class="card-link" href="projetos/25-sticky-navbar/">
+                    <img src="miniaturas/25-sticky-navbar.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">25</span>
+                    <h3>Sticky Navbar</h3>
+                </a>
+                <p>Menu que muda de estilo ao rolar a página.</p>
+                <div class="card-rodape">
+                    <span class="tag">Navegação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/25-sticky-navbar" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Sticky Navbar no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Componente" data-melhorado="false" data-busca="vertical slider slider em duas colunas que se movem em sentidos opostos. componente">
+                <a class="card-link" href="projetos/26-vertical-slider/">
+                    <img src="miniaturas/26-vertical-slider.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">26</span>
+                    <h3>Vertical Slider</h3>
+                </a>
+                <p>Slider em duas colunas que se movem em sentidos opostos.</p>
+                <div class="card-rodape">
+                    <span class="tag">Componente</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/26-vertical-slider" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Vertical Slider no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Componente" data-melhorado="false" data-busca="toast notification notificações que aparecem e somem sozinhas. componente">
+                <a class="card-link" href="projetos/27-toast-notification/">
+                    <img src="miniaturas/27-toast-notification.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">27</span>
+                    <h3>Toast Notification</h3>
+                </a>
+                <p>Notificações que aparecem e somem sozinhas.</p>
+                <div class="card-rodape">
+                    <span class="tag">Componente</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/27-toast-notification" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Toast Notification no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="API" data-melhorado="true" data-busca="github profiles perfis do github com os repositórios mais estrelados e tratamento de erros. api melhorado">
+                <a class="card-link" href="projetos/28-github-profiles/">
+                    <img src="miniaturas/28-github-profiles.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">28</span>
+                    <span class="selo-melhorado">Melhorado</span>
+                    <h3>GitHub Profiles</h3>
+                </a>
+                <p>Perfis do GitHub com os repositórios mais estrelados e tratamento de erros.</p>
+                <div class="card-rodape">
+                    <span class="tag">API</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/28-github-profiles" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de GitHub Profiles no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Interação" data-melhorado="false" data-busca="double click heart curtida com coração ao clicar duas vezes na imagem. interação">
+                <a class="card-link" href="projetos/29-double-click-heart/">
+                    <img src="miniaturas/29-double-click-heart.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">29</span>
+                    <h3>Double Click Heart</h3>
+                </a>
+                <p>Curtida com coração ao clicar duas vezes na imagem.</p>
+                <div class="card-rodape">
+                    <span class="tag">Interação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/29-double-click-heart" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Double Click Heart no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Animação" data-melhorado="false" data-busca="auto text effect texto digitado automaticamente com velocidade ajustável. animação">
+                <a class="card-link" href="projetos/30-auto-text-effect/">
+                    <img src="miniaturas/30-auto-text-effect.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">30</span>
+                    <h3>Auto Text Effect</h3>
+                </a>
+                <p>Texto digitado automaticamente com velocidade ajustável.</p>
+                <div class="card-rodape">
+                    <span class="tag">Animação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/30-auto-text-effect" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Auto Text Effect no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Utilitário" data-melhorado="true" data-busca="password generator senhas com gerador criptográfico e medidor de força. utilitário melhorado">
+                <a class="card-link" href="projetos/31-password-generator/">
+                    <img src="miniaturas/31-password-generator.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">31</span>
+                    <span class="selo-melhorado">Melhorado</span>
+                    <h3>Password Generator</h3>
+                </a>
+                <p>Senhas com gerador criptográfico e medidor de força.</p>
+                <div class="card-rodape">
+                    <span class="tag">Utilitário</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/31-password-generator" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Password Generator no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Interação" data-melhorado="false" data-busca="good, cheap, fast três interruptores em que só dois ficam ligados. interação">
+                <a class="card-link" href="projetos/32-good-cheap-fast/">
+                    <img src="miniaturas/32-good-cheap-fast.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">32</span>
+                    <h3>Good, Cheap, Fast</h3>
+                </a>
+                <p>Três interruptores em que só dois ficam ligados.</p>
+                <div class="card-rodape">
+                    <span class="tag">Interação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/32-good-cheap-fast" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Good, Cheap, Fast no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Utilitário" data-melhorado="false" data-busca="notes app notas em markdown salvas no navegador. utilitário">
+                <a class="card-link" href="projetos/33-notes-app/">
+                    <img src="miniaturas/33-notes-app.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">33</span>
+                    <h3>Notes App</h3>
+                </a>
+                <p>Notas em Markdown salvas no navegador.</p>
+                <div class="card-rodape">
+                    <span class="tag">Utilitário</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/33-notes-app" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Notes App no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Animação" data-melhorado="false" data-busca="animated countdown contagem regressiva com números girando. animação">
+                <a class="card-link" href="projetos/34-animated-countdown/">
+                    <img src="miniaturas/34-animated-countdown.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">34</span>
+                    <h3>Animated Countdown</h3>
+                </a>
+                <p>Contagem regressiva com números girando.</p>
+                <div class="card-rodape">
+                    <span class="tag">Animação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/34-animated-countdown" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Animated Countdown no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Componente" data-melhorado="false" data-busca="image carousel carrossel de imagens automático com setas. componente">
+                <a class="card-link" href="projetos/35-image-carousel/">
+                    <img src="miniaturas/35-image-carousel.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">35</span>
+                    <h3>Image Carousel</h3>
+                </a>
+                <p>Carrossel de imagens automático com setas.</p>
+                <div class="card-rodape">
+                    <span class="tag">Componente</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/35-image-carousel" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Image Carousel no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Interação" data-melhorado="false" data-busca="hoverboard grade de quadrados que acendem ao passar o mouse. interação">
+                <a class="card-link" href="projetos/36-hoverboard/">
+                    <img src="miniaturas/36-hoverboard.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">36</span>
+                    <h3>Hoverboard</h3>
+                </a>
+                <p>Grade de quadrados que acendem ao passar o mouse.</p>
+                <div class="card-rodape">
+                    <span class="tag">Interação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/36-hoverboard" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Hoverboard no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="API" data-melhorado="true" data-busca="pokedex pokédex com gerações, filtro por tipo, favoritos e ficha completa de cada pokémon. api melhorado">
+                <a class="card-link" href="projetos/37-pokedex/">
+                    <img src="miniaturas/37-pokedex.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">37</span>
+                    <span class="selo-melhorado">Melhorado</span>
+                    <h3>Pokedex</h3>
+                </a>
+                <p>Pokédex com gerações, filtro por tipo, favoritos e ficha completa de cada Pokémon.</p>
+                <div class="card-rodape">
+                    <span class="tag">API</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/37-pokedex" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Pokedex no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Navegação" data-melhorado="false" data-busca="mobile tab navigation navegação por abas imitando um aplicativo de celular. navegação">
+                <a class="card-link" href="projetos/38-mobile-tab-navigation/">
+                    <img src="miniaturas/38-mobile-tab-navigation.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">38</span>
+                    <h3>Mobile Tab Navigation</h3>
+                </a>
+                <p>Navegação por abas imitando um aplicativo de celular.</p>
+                <div class="card-rodape">
+                    <span class="tag">Navegação</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/38-mobile-tab-navigation" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Mobile Tab Navigation no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Formulário" data-melhorado="false" data-busca="password strength background fundo que fica nítido conforme a senha fica forte. formulário">
+                <a class="card-link" href="projetos/39-password-strength-background/">
+                    <img src="miniaturas/39-password-strength-background.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">39</span>
+                    <h3>Password Strength Background</h3>
+                </a>
+                <p>Fundo que fica nítido conforme a senha fica forte.</p>
+                <div class="card-rodape">
+                    <span class="tag">Formulário</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/39-password-strength-background" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Password Strength Background no GitHub</span>
+                    </a>
+                </div>
+            </li>
+            <li class="card" data-categoria="Componente" data-melhorado="false" data-busca="testimonial box switcher depoimentos que se alternam com barra de progresso. componente">
+                <a class="card-link" href="projetos/40-testimonial-box-switcher/">
+                    <img src="miniaturas/40-testimonial-box-switcher.webp" width="480" height="300" alt="" loading="lazy">
+                    <span class="card-numero" aria-hidden="true">40</span>
+                    <h3>Testimonial Box Switcher</h3>
+                </a>
+                <p>Depoimentos que se alternam com barra de progresso.</p>
+                <div class="card-rodape">
+                    <span class="tag">Componente</span>
+                    <a class="card-codigo" href="https://github.com/Will-Ifes/50projects/tree/master/projetos/40-testimonial-box-switcher" target="_blank" rel="noopener noreferrer">
+                        Código<span class="sr-only"> de Testimonial Box Switcher no GitHub</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <footer class="rodape">
+        <p>
+            Projetos baseados no curso <em>50 Projects in 50 Days</em> de Brad Traversy e Florin Pop,
+            refeitos e revisados por <a href="https://github.com/Will-Ifes">Will Oliveira</a>.
+        </p>
+        <p><a href="https://github.com/Will-Ifes/50projects">Código no GitHub</a></p>
+    </footer>
+</body>
+</html>
