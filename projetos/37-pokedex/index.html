@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>37 · Pokedex | 50 Projetos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../comum/vitrine.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="vitrine-nav" aria-label="Vitrine"><a class="vitrine-voltar" href="../../">← Vitrine</a></nav>
+
+    <header class="topo">
+        <h1>Pokédex</h1>
+        <p>Dados da <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer">PokéAPI</a>. Clique em um Pokémon para ver os detalhes.</p>
+    </header>
+
+    <main class="vitrine-main">
+        <form class="controles" role="search" aria-label="Filtrar Pokémon">
+            <div class="campo">
+                <label for="geracao">Geração</label>
+                <select id="geracao"></select>
+            </div>
+            <div class="campo campo-busca">
+                <label for="busca">Nome ou número</label>
+                <input id="busca" type="search" placeholder="Ex.: pikachu ou 25" autocomplete="off">
+            </div>
+            <div class="campo">
+                <label for="ordem">Ordenar por</label>
+                <select id="ordem">
+                    <option value="numero">Número</option>
+                    <option value="nome">Nome</option>
+                    <option value="total">Força total</option>
+                </select>
+            </div>
+            <label class="favoritos-toggle">
+                <input id="so-favoritos" type="checkbox">
+                Só favoritos
+            </label>
+        </form>
+
+        <div class="tipos" role="group" aria-label="Filtrar por tipo"></div>
+
+        <p class="status" role="status" aria-live="polite"></p>
+
+        <ul class="poke-container" id="poke-container"></ul>
+    </main>
+
+    <dialog class="detalhe" id="detalhe" aria-labelledby="detalhe-nome">
+        <div class="detalhe-conteudo"></div>
+    </dialog>
+
+    <!-- Design inspirado neste Dribbble: https://dribbble.com/shots/5611109--Pokemon -->
+</body>
+</html>

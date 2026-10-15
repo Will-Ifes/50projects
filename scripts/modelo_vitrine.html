@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{TOTAL}} mini projetos de HTML, CSS e JavaScript puros, revisados para acessibilidade. Por Will Oliveira.">
+    <title>50 Projetos · Vitrine de HTML, CSS e JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap">
+    <link rel="stylesheet" href="comum/indice.css">
+    <script src="comum/indice.js" defer></script>
+</head>
+<body>
+    <a class="pular-link" href="#projetos">Pular para os projetos</a>
+
+    <header class="cabecalho">
+        <p class="selo">HTML · CSS · JavaScript puro</p>
+        <h1>50 Projetos <span>em 50 dias</span></h1>
+        <p class="intro">
+            {{TOTAL}} mini projetos feitos durante o curso <em>50 Projects in 50 Days</em>,
+            revisados em 2026: nomes organizados, recursos quebrados consertados e
+            acessibilidade conferida com axe-core em todos eles.
+        </p>
+        <ul class="numeros" aria-label="Resumo">
+            <li><strong>{{TOTAL}}</strong> projetos</li>
+            <li><strong>0</strong> dependências de build</li>
+            <li><strong>0</strong> violações no axe</li>
+        </ul>
+    </header>
+
+    <main id="projetos" tabindex="-1">
+        <h2 class="sr-only">Projetos</h2>
+
+        <div class="controles">
+            <div class="busca">
+                <label for="busca">Buscar projeto</label>
+                <input id="busca" type="search" placeholder="Ex.: carrossel, API, senha" autocomplete="off">
+            </div>
+            <div class="filtros" role="group" aria-label="Filtrar por categoria">
+                <button type="button" class="filtro" aria-pressed="true" data-filtro="">Todos</button>
+{{FILTROS}}
+            </div>
+        </div>
+
+        <p class="resultado" role="status" aria-live="polite"></p>
+
+        <ul class="grade">{{CARDS}}
+        </ul>
+    </main>
+
+    <footer class="rodape">
+        <p>
+            Projetos baseados no curso <em>50 Projects in 50 Days</em> de Brad Traversy e Florin Pop,
+            refeitos e revisados por <a href="https://github.com/Will-Ifes">Will Oliveira</a>.
+        </p>
+        <p><a href="https://github.com/Will-Ifes/50projects">Código no GitHub</a></p>
+    </footer>
+</body>
+</html>

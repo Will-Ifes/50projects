@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    }
+
+    canvas {
+        border: 2px solid steelblue;
+}
+
+.toolbox {
+    background-color: steelblue;
+    border: 1px solid slateblue;
+    display: flex;
+    width: 804px;
+    padding: 1rem;
+}
+
+.toolbox > * {
+    background-color: #fff;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.toolbox > *:last-child {
+    margin-left: auto;
+}
+
+/* Revisão 2026: canvas e barra encolhem no celular; toque desenha em vez de rolar */
+canvas {
+    max-width: calc(100vw - 32px);
+    height: auto;
+    touch-action: none;
+}
+
+.toolbox {
+    max-width: calc(100vw - 32px);
+    flex-wrap: wrap;
+}
