@@ -1,0 +1,61 @@
+/* Estilos comuns a todos os projetos da vitrine. Não altera o layout de cada projeto. */
+
+/* O <main> envolve o conteúdo só para a acessibilidade (landmark);
+   display: contents mantém o layout original, que costuma centralizar os filhos do body */
+.vitrine-main {
+    display: contents;
+}
+
+/* Texto só para leitores de tela */
+.vitrine-sr {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+/* Link de volta para a vitrine, fixo no canto e acima do conteúdo do projeto */
+.vitrine-nav {
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    z-index: 9999;
+}
+
+.vitrine-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 40px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: #111827;
+    color: #ffffff;
+    font: 600 14px/1 system-ui, sans-serif;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.vitrine-voltar:hover,
+.vitrine-voltar:focus-visible {
+    opacity: 1;
+}
+
+/* Foco visível em todos os projetos, inclusive os que removiam o outline */
+:focus-visible {
+    outline: 3px solid #f59e0b !important;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

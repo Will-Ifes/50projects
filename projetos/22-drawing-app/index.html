@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>22 · Drawing App | 50 Projetos</title>
+        <link rel="stylesheet" href="../../comum/vitrine.css">
+</head>
+    <body>
+    <nav class="vitrine-nav" aria-label="Vitrine"><a class="vitrine-voltar" href="../../">← Vitrine</a></nav>
+    <main class="vitrine-main">
+    <h1 class="vitrine-sr">Drawing App</h1>
+        <canvas id="canvas" width="800" height="800"></canvas>
+        <div class="toolbox">
+            <button id="decrease" aria-label="Diminuir pincel">-</button>
+            <span id="size" aria-live="polite" aria-label="Tamanho do pincel">10</span>
+            <button id="increase" aria-label="Aumentar pincel">+</button>
+            <input type="color" id="color" aria-label="Cor do pincel">
+            <button id="save" aria-label="Salvar desenho como PNG">⬇</button>
+            <button id="clear" aria-label="Limpar desenho">X</button>
+        </div>
+        <script src="script.js"></script>
+        </main>
+</body>
+</html>
