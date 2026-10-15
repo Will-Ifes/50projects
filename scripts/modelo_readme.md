@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://will-ifes.github.io/50projects/">
+    <img src="./.github/readme-cover.svg" alt="50 Projetos. Vitrine com 40 mini projetos de HTML, CSS e JavaScript." width="100%" />
+  </a>
+</p>
+
 # 50 Projetos · vitrine de HTML, CSS e JavaScript
 
 {{TOTAL}} mini projetos feitos durante o curso *50 Projects in 50 Days* (Brad Traversy e Florin Pop), reunidos numa vitrine com busca e filtros, revisados para acessibilidade e com melhorias próprias em alguns deles.
@@ -5,7 +11,11 @@
 **HTML · CSS · JavaScript puro** · [Abrir a vitrine](https://will-ifes.github.io/50projects/)
 
 <p align="center">
-  <img src="./.github/demo.gif" alt="Demonstração: a vitrine filtra os projetos melhorados, a Pokédex filtra por tipo Fogo e abre a ficha do Charizard, e o gerador de senhas cria senhas com medidor de força." width="720" />
+  <a href="https://will-ifes.github.io/50projects/">
+    <img src="./.github/demo.gif" alt="Demonstração da vitrine atual, da Pokédex e do gerador de senhas. Clique para explorar os projetos." width="720" />
+  </a>
+  <br />
+  <sub>Clique na demonstração para abrir a vitrine publicada.</sub>
 </p>
 
 ## O que mudou na revisão
