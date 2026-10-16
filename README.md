@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://will-ifes.github.io/50projects/">
-    <img src="./.github/readme-cover.svg" alt="50 Projetos. Vitrine com 40 mini projetos de HTML, CSS e JavaScript." width="100%" />
+    <img src="./.github/readme-cover.svg?v=20261016" alt="50 Projetos. Vitrine com 40 mini projetos de HTML, CSS e JavaScript." width="100%" />
   </a>
 </p>
 
